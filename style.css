@@ -8,7 +8,7 @@
 .container {
     max-width: 1110px;
     margin: 0 auto;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 24px 0px 24px;
 }
 
 html, body { 
@@ -42,7 +42,9 @@ button {
     font-weight: 900;
     font-size: 16px;
     line-height: 26px;
+    cursor: pointer;
 }
+
 
 /* ---------------------- HEADER ------------------- */
 
@@ -51,6 +53,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 /* ---------------------- HERO ------------------- */
@@ -70,7 +73,7 @@ button {
 
 .hero-text-box {
     margin-top: 55px;
-    width: 540px;
+    max-width: 540px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,6 +105,14 @@ button {
     background-color: #855FB1;
 }
 
+.hero .hero-text-box #button-1:hover {
+    background-color: #71C0D4
+}
+
+.hero .hero-text-box #button-2:hover {
+    background-color: #B18BDD;
+}
+
 @media(max-width: 1110px) {
     .hero-background-image-1 img {
         display: none;
@@ -110,6 +121,84 @@ button {
     .hero-background-image-2 img {
         display: block;
         position: relative;
+        width: 100%;
+        margin-top: 64px;
     }
+
+    .hero-text-box {
+        margin-top: 72px;
+    }
+    
+}
+
+@media(max-width: 768px) {
+    .hero .hero-text-box h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .hero .hero-text-box p {
+        font-size: 16px;
+    }
+    
+}
+
+@media(max-width: 375px) {
+    .hero .hero-text-box h1 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .hero .hero-text-box .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    .hero .hero-text-box button {
+        margin-top: 16px;
+        
+    } 
+    .hero .hero-text-box #button-1 {
+        margin-right: 0;
+    }  
+}
+
+/* ------- SMARTER MEETINGS SECTION  ------ */
+
+.smarter-meetings-section .seperator {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+.smarter-meetings-section .image-cards img {
+    width: 100%;
+}
+
+.smarter-meetings-section .image-cards {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(164px,1fr));
+    column-gap: 30px;
+    justify-items: center;
+}
+
+@media(max-width: 1110px) {
+    
+}
+
+@media(max-width: 768px) {
+    .seperator {
+        margin-top: 80px;
+    } 
+    
+}
+
+@media(max-width: 375px) {
+    .seperator {
+        margin-top: 64px;
+    } 
     
 }

@@ -16,7 +16,7 @@ html, body {
     background-color: #F2F2F2;
 }
 h1, h2, h3, h4 {
-    color: #28283D;;
+    color: #28283D;
 }
 
 h1 {
@@ -185,6 +185,44 @@ button {
     justify-items: center;
 }
 
+.smarter-meetings-section .smarter-meetings-text-box {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 540px;
+    
+}
+
+.smarter-meetings-section .smarter-meetings-text-box  h3 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    color: #4D96A9;
+    text-transform: uppercase;
+}
+
+.smarter-meetings-section .smarter-meetings-text-box  h2 {
+    text-align: center;
+    margin-top: 16px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.smarter-meetings-section .smarter-meetings-text-box  p {
+    text-align: center;
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    
+}
+
 @media(max-width: 1110px) {
     
 }
@@ -193,6 +231,13 @@ button {
     .seperator {
         margin-top: 80px;
     } 
+
+    .smarter-meetings-section .image-cards {
+        grid-template-columns: repeat(2, minmax(150px,1fr));
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 24px;
+        row-gap: 24px;
+    }
     
 }
 
@@ -200,5 +245,140 @@ button {
     .seperator {
         margin-top: 64px;
     } 
+
+    .smarter-meetings-section .smarter-meetings-text-box  h2 {
+        font-size: 38px;
+        line-height: 36px;
+    }
     
 }
+
+/* ------- FOOTER SECTION  ------ */
+footer {
+    position: relative;
+}
+
+footer .footer-background-image {
+    position: absolute;
+    top: 110px;
+}
+
+footer .footer-background-image-2 {
+    position: absolute;
+    top: 110px;
+    display: none;
+}
+
+footer .footer-background-image img{
+    width: 100%;
+}
+
+footer .footer-background-image-2 img {
+    width: 100%;
+}
+
+footer .footer-seperator {
+    margin-top: 72px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+
+}
+
+footer .footer-text-box {
+    margin-top: 88px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+
+}
+
+footer .footer-text-box h2 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    max-width: 350px;
+    color: #FAFAFA;
+}
+
+footer .footer-text-box p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FAFAFA;
+    max-width: 350px;
+}
+
+footer .footer-text-box button {
+    background-color: #855FB1;
+}
+
+footer .footer-text-box button:hover {
+    background-color: #B18BDD;
+}
+
+@media(max-width: 1110px) {
+    footer .footer-background-image {
+        top: 135px;
+    }
+    
+}
+
+@media(max-width: 930px) {
+    footer .footer-text-box {
+        margin-top: 64px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-background-image {
+        display: none;
+    }
+    footer .footer-background-image-2 {
+        display: block;
+        width: 100vw;
+        height: 100%;
+    }
+
+    footer .footer-background-image-2 img {
+        height: 100%;
+    }
+
+    footer .footer-text-box h2 {
+        text-align: center;
+    }
+    
+    footer .footer-text-box p {
+        margin-top: 24px;
+        text-align: center;
+    }
+    
+    footer .footer-text-box button {
+        margin-top: 32px;
+    }
+    
+}
+
+@media(max-width: 375px) {
+    footer .footer-text-box h2 {
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+    }
+    
+    footer .footer-text-box p {
+        margin-top: 24px;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+    }
+    
+    footer .footer-text-box button {
+        margin-top: 32px;
+    }
+    
+}
+

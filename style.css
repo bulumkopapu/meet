@@ -269,6 +269,12 @@ footer .footer-background-image-2 {
     display: none;
 }
 
+footer .footer-background-image-3 {
+    position: absolute;
+    top: 110px;
+    display: none;
+}
+
 footer .footer-background-image img{
     width: 100%;
 }
@@ -378,6 +384,18 @@ footer .footer-text-box button:hover {
     
     footer .footer-text-box button {
         margin-top: 32px;
+    }
+
+    footer .footer-background-image-2 {
+        display: none;
+    }
+
+    footer .footer-background-image-3 {
+        display: block;
+    }
+
+    footer .footer-background-image-3 img {
+        width: 100%;
     }
     
 }

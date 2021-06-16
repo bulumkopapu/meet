@@ -128,7 +128,6 @@ button {
     .hero-text-box {
         margin-top: 72px;
     }
-    
 }
 
 @media(max-width: 768px) {
@@ -166,6 +165,9 @@ button {
 }
 
 /* ------- SMARTER MEETINGS SECTION  ------ */
+.smarter-meetings-section {
+    position: relative;
+}
 
 .smarter-meetings-section .seperator {
     margin-top: 110px;
@@ -223,6 +225,14 @@ button {
     
 }
 
+.smarter-meetings-section-seperator {
+    margin-top: 72px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
 @media(max-width: 1110px) {
     
 }
@@ -238,7 +248,6 @@ button {
         column-gap: 24px;
         row-gap: 24px;
     }
-    
 }
 
 @media(max-width: 375px) {
@@ -250,6 +259,10 @@ button {
         font-size: 38px;
         line-height: 36px;
     }
+
+    .smarter-meetings-section .image-cards {
+        grid-template-columns: repeat(2, minmax(50px, 1fr));
+    }
     
 }
 
@@ -258,47 +271,21 @@ footer {
     position: relative;
 }
 
-footer .footer-background-image {
-    position: absolute;
-    top: 110px;
-}
-
-footer .footer-background-image-2 {
-    position: absolute;
-    top: 110px;
-    display: none;
-}
-
-footer .footer-background-image-3 {
-    position: absolute;
-    top: 110px;
-    display: none;
-}
-
-footer .footer-background-image img{
-    width: 100%;
-}
-
-footer .footer-background-image-2 img {
-    width: 100%;
-}
-
-footer .footer-seperator {
-    margin-top: 72px;
-    display: flex;
-    justify-content: center;
+.footer-bg-image {
     position: relative;
-    z-index: 10;
-
+    background-image: url(media/footerbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -25px;
 }
 
 footer .footer-text-box {
-    margin-top: 88px;
+    padding: 116px 0 104px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     z-index: 10;
-
 }
 
 footer .footer-text-box h2 {
@@ -326,31 +313,10 @@ footer .footer-text-box button:hover {
     background-color: #B18BDD;
 }
 
-@media(max-width: 1110px) {
-    footer .footer-background-image {
-        top: 135px;
-    }
-    
-}
-
 @media(max-width: 930px) {
     footer .footer-text-box {
-        margin-top: 64px;
         flex-direction: column;
         align-items: center;
-    }
-
-    footer .footer-background-image {
-        display: none;
-    }
-    footer .footer-background-image-2 {
-        display: block;
-        width: 100vw;
-        height: 100%;
-    }
-
-    footer .footer-background-image-2 img {
-        height: 100%;
     }
 
     footer .footer-text-box h2 {
@@ -365,10 +331,19 @@ footer .footer-text-box button:hover {
     footer .footer-text-box button {
         margin-top: 32px;
     }
-    
+}
+
+@media(max-width: 768px) {
+    .footer-bg-image {
+        background-image: url(media/footerbg2.png);
+    }
 }
 
 @media(max-width: 375px) {
+    .footer-bg-image {
+        background-image: url(media/footerbg3.png);
+    }
+
     footer .footer-text-box h2 {
         font-size: 32px;
         line-height: 36px;
@@ -384,19 +359,6 @@ footer .footer-text-box button:hover {
     
     footer .footer-text-box button {
         margin-top: 32px;
-    }
-
-    footer .footer-background-image-2 {
-        display: none;
-    }
-
-    footer .footer-background-image-3 {
-        display: block;
-    }
-
-    footer .footer-background-image-3 img {
-        width: 100%;
-    }
-    
+    } 
 }
 
